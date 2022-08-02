@@ -150,8 +150,9 @@ GameObject:
   - component: {fileID: 72243272}
   - component: {fileID: 72243271}
   - component: {fileID: 72243270}
+  - component: {fileID: 72243273}
   m_Layer: 0
-  m_Name: Table 4
+  m_Name: Empty Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +171,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.19150496, y: 0.10311842}
+  m_Offset: {x: 1.00443, y: 0.10311842}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -181,7 +182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.3881693, y: 1.8544092}
+  m_Size: {x: 2.762319, y: 1.8544092}
   m_EdgeRadius: 0
 --- !u!61 &72243271
 BoxCollider2D:
@@ -224,6 +225,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &72243273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72243269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee034a45590cd46f796470f22770832a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: I don't want to sit the seat's sticky
+  lookAtText: I was just sitting there
+  isColliding: 0
+  textBox: {fileID: 65970337}
+  interact: 101
+  lookAt: 102
 --- !u!1 &135090026
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +254,7 @@ GameObject:
   - component: {fileID: 135090029}
   - component: {fileID: 135090028}
   - component: {fileID: 135090027}
+  - component: {fileID: 135090030}
   m_Layer: 0
   m_Name: Table 3
   m_TagString: Untagged
@@ -309,6 +329,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &135090030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135090026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee034a45590cd46f796470f22770832a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: '>I''ve been here for 6 hours working on my screenplay. It''ll be
+    really good I swear'
+  lookAtText: He's a bit of a nerd
+  isColliding: 0
+  textBox: {fileID: 65970337}
+  interact: 101
+  lookAt: 102
 --- !u!1 &152887569
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +358,6 @@ GameObject:
   m_Component:
   - component: {fileID: 152887573}
   - component: {fileID: 152887572}
-  - component: {fileID: 152887571}
   - component: {fileID: 152887570}
   - component: {fileID: 152887575}
   - component: {fileID: 152887574}
@@ -346,24 +384,12 @@ MonoBehaviour:
   moveDown: 115
   moveRight: 100
   moveLeft: 97
-  mainCharacter: {fileID: 0}
+  mainCharacter: {fileID: 152887575}
   movementSpeed: 4
-  yborder: 100
-  xborder: 100
---- !u!114 &152887571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152887569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd8f3cc78a9a0411ea3f7556df2f8a4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCharacter: {fileID: 0}
-  textBoxPrefab: {fileID: 0}
+  yborderTop: 2.5
+  xborderRight: 7.5
+  xborderLeft: -7.5
+  yborderBottom: -3.5
 --- !u!212 &152887572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -576,14 +602,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee034a45590cd46f796470f22770832a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: ',asdnflk'
-  lookAtText: j;jf;j;j;j
+  interactText: '>I was born with only 1 eye and even I can see somethings fishy
+    here'
+  lookAtText: She seems a little worried
   isColliding: 0
   textBox: {fileID: 65970337}
-  interact: 0
-  lookAt: 0
-  mainChrController: {fileID: 0}
-  textPrefab: {fileID: 0}
+  interact: 101
+  lookAt: 102
 --- !u!1 &508376475
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,8 +838,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922128316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1217, y: 0.0089, z: 0}
-  m_LocalScale: {x: 17.667103, y: 13.361245, z: 1}
+  m_LocalPosition: {x: -0.0481, y: 0.0089, z: 0}
+  m_LocalScale: {x: 17.81374, y: 13.361245, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -832,6 +857,7 @@ GameObject:
   - component: {fileID: 1269534335}
   - component: {fileID: 1269534334}
   - component: {fileID: 1269534333}
+  - component: {fileID: 1269534337}
   m_Layer: 0
   m_Name: Table 5
   m_TagString: Untagged
@@ -932,6 +958,128 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269534337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269534332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee034a45590cd46f796470f22770832a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: '>I''m only 5 and I don''t know where my parents are'
+  lookAtText: He looks very young
+  isColliding: 0
+  textBox: {fileID: 65970337}
+  interact: 101
+  lookAt: 102
+--- !u!1 &1300279366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300279370}
+  - component: {fileID: 1300279369}
+  - component: {fileID: 1300279368}
+  - component: {fileID: 1300279367}
+  m_Layer: 0
+  m_Name: Barista
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1300279367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300279366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee034a45590cd46f796470f22770832a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: Times Ticking
+  lookAtText: She seems to be in on it
+  isColliding: 0
+  textBox: {fileID: 65970337}
+  interact: 101
+  lookAt: 102
+--- !u!61 &1300279368
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300279366}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.867218, y: 0.33725125}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.633772, y: 2.8950315}
+  m_EdgeRadius: 0
+--- !u!61 &1300279369
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300279366}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.3051324, y: 0.48178762}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0321169, y: 2.15629}
+  m_EdgeRadius: 0
+--- !u!4 &1300279370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300279366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.13, y: 1.44, z: 0.057522524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1310454327
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,8 +1091,9 @@ GameObject:
   - component: {fileID: 1310454330}
   - component: {fileID: 1310454329}
   - component: {fileID: 1310454328}
+  - component: {fileID: 1310454331}
   m_Layer: 0
-  m_Name: Table 6
+  m_Name: TrashCan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1017,6 +1166,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1310454331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310454327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee034a45590cd46f796470f22770832a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: It's still a trash can
+  lookAtText: It's a trash can
+  isColliding: 0
+  textBox: {fileID: 65970337}
+  interact: 101
+  lookAt: 102
+--- !u!114 &1786989379 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4599642709713598565, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+  m_PrefabInstance: {fileID: 4599642709708183751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1838139571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1296,64 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1846007964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846007966}
+  - component: {fileID: 1846007965}
+  m_Layer: 0
+  m_Name: CounterBorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1846007965
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846007964}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1713021, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.65739584, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1846007966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846007964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6, y: 2.5, z: 0.028862312}
+  m_LocalScale: {x: 1.5, y: 4.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1860706033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1364,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1860706035}
   - component: {fileID: 1860706034}
-  - component: {fileID: 1860706038}
   - component: {fileID: 1860706037}
   - component: {fileID: 1860706036}
   m_Layer: 0
@@ -1192,13 +1427,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactText: '> I wish I could go home to my 2 kids.'
-  lookAtText: barista!
+  lookAtText: He has nice hair
   isColliding: 0
   textBox: {fileID: 65970337}
   interact: 0
   lookAt: 0
-  mainChrController: {fileID: 0}
-  textPrefab: {fileID: 0}
 --- !u!61 &1860706037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1225,32 +1458,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.940243, y: 2.8425152}
   m_EdgeRadius: 0
---- !u!61 &1860706038
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860706033}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 4.313826, y: -1.1406049}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.3802013, y: 0.9415076}
-  m_EdgeRadius: 0
 --- !u!1001 &4599642709708183751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1268,9 +1475,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4599642709713598565, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: m_Text
-      value: 'interact with something
+      value: '
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599642709713598565, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599642709713598565, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599642709713598565, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4599642709713598565, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: m_FontData.m_MaxSize
@@ -1284,6 +1503,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4599642709713598566, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 1786989379}
     - target: {fileID: 4599642709713598567, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1318,7 +1541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4599642709713598567, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 74.83
       objectReference: {fileID: 0}
     - target: {fileID: 4599642709713598567, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1354,7 +1577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4599642709713598567, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 37.410004
       objectReference: {fileID: 0}
     - target: {fileID: 4599642709713598567, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -11,8 +11,7 @@ public class InteractionTrigger : MonoBehaviour
     public TextHandler textBox;
     public KeyCode interact;
     public KeyCode lookAt;
-    public mainCharacterController mainChrController;
-    public GameObject textPrefab;
+    
 
 
     // Start is called before the first frame update
