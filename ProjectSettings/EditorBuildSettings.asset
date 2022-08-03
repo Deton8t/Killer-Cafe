@@ -18,12 +18,33 @@ EditorBuildSettings:
     path: Assets/Scenes/CutScenes/CutScene2.unity
     guid: 53dbe94b15fdcf4448c180a12843b013
   - enabled: 1
-    path: Assets/Scenes/Transitions/KitchenRoom.unity
-    guid: 07f74f4c8a9f4f04ea9fe50d67c941fa
+    path: Assets/Scenes/KitchenRoom.unity
+    guid: e5d944190df052a4f8f2a2051d85d4c6
   - enabled: 1
     path: Assets/Scenes/CutScenes/CutScene3.unity
     guid: a3a623c908dcd0e478bcc414822b655c
   - enabled: 1
     path: Assets/Scenes/CultRoom.unity
     guid: 14e64e80f47b8cc4ca3d44da89a24a04
+  - enabled: 1
+    path: Assets/Scenes/MainRoom2.unity
+    guid: 9cb9d84d758e26344bb3353c66f19912
+  - enabled: 1
+    path: Assets/Scenes/Transitions/CultToKitchenTR.unity
+    guid: 68da7a59bc11213449cd38dd5186442d
+  - enabled: 1
+    path: Assets/Scenes/Transitions/CultToMainTR.unity
+    guid: 0cab3f1627ee18e4dbbe9d369f12d7c8
+  - enabled: 1
+    path: Assets/Scenes/Transitions/KitchenToCultTR.unity
+    guid: e802b80eabfcfd24490a13e8bfb678a2
+  - enabled: 1
+    path: Assets/Scenes/Transitions/KitchenToMainTR.unity
+    guid: f869634a02337e841a1cd5c62e52cb52
+  - enabled: 1
+    path: Assets/Scenes/Transitions/MainToCultTR.unity
+    guid: 333c3b79c59c3694b81c422e5913a812
+  - enabled: 1
+    path: Assets/Scenes/Transitions/MainToKitchenTR.unity
+    guid: 2720f8e0e4256c747b9af0bd47aaa068
   m_configObjects: {}
