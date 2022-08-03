@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CutScenes/CutScene2.unity
     guid: 53dbe94b15fdcf4448c180a12843b013
   - enabled: 1
-    path: Assets/Scenes/Transitions/KitchenRoom.unity
+    path: Assets/Scenes/KitchenRoom.unity
     guid: 07f74f4c8a9f4f04ea9fe50d67c941fa
   - enabled: 1
     path: Assets/Scenes/CutScenes/CutScene3.unity
