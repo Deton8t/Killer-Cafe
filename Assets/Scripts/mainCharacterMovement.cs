@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class mainCharacterMovement : MonoBehaviour
 {
     public KeyCode moveUp;
@@ -14,6 +15,7 @@ public class mainCharacterMovement : MonoBehaviour
     public float xborderRight;
     public float xborderLeft;
     public float yborderBottom;
+    public SpriteRenderer flipper;
 
 
     void Start()
@@ -43,10 +45,12 @@ public class mainCharacterMovement : MonoBehaviour
         if (Input.GetKey(moveRight) && mainCharacter.transform.position.x < xborderRight)
         {
             velocity.x = movementSpeed;
+            flipper.flipX = true;
         }
         else if (Input.GetKey(moveLeft) && mainCharacter.transform.position.x > xborderLeft)
         {
             velocity.x = -movementSpeed;
+            flipper.flipX = false;
         }
         else
         {
