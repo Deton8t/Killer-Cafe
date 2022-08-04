@@ -10,6 +10,9 @@ public class MopScript : MonoBehaviour
     public KeyCode interact;
     public KeyCode lookAt;
     public TextHandler textBox;
+    public itemSpawner items;
+    public MopCover mopCover;
+
 
 
 
@@ -27,13 +30,13 @@ public class MopScript : MonoBehaviour
     {
         if (isColliding)
         {
-            if (itemTracker.hasItem2)
+            if (Input.GetKeyDown(interact))
             {
-                if (Input.GetKeyDown(interact))
-                {
-                    textBox.displayText("You picked up the mop");
-                    itemTracker.hasItem3 = true;
-                }
+                textBox.displayText("You picked up the mop");
+                itemTracker.hasItem3 = true;
+                items.loadItem();
+                mopCover.load();
+
             }
             if (Input.GetKeyDown(lookAt))
             {

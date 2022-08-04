@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4fff873927a024e7f8fc4fcd47accd27
+guid: db3862e4eaea54b199dcccaf0d5da578
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: win_screen_0
+      name: mop_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0baf1e965b5f5493da78bfbe29ce95a6
-      internalID: 37677870
+      spriteID: 3900155bb4ff64134bacf3b2a96550d6
+      internalID: -1899364030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: win_screen_1
+      name: mop_1
       rect:
         serializedVersion: 2
         x: 64
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe363f6c3c9b943ea959a443079825b3
-      internalID: 972030786
+      spriteID: ef709cabeb85248c3a625b8d3899035b
+      internalID: 404931612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: win_screen_2
+      name: mop_2
       rect:
         serializedVersion: 2
         x: 128
@@ -172,14 +172,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb61f1adb2c3f48b58e72ba510aff652
-      internalID: 822975037
+      spriteID: 6c239bb1e428f451e980dc380a86b9a4
+      internalID: 523089638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: win_screen_3
+      name: mop_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d77260085384707a73debe7ca9830f
+      internalID: -106378882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_4
       rect:
         serializedVersion: 2
         x: 0
@@ -193,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de4baf27b1aac4eceb3be97b70472e6b
-      internalID: -310191933
+      spriteID: 007ab72987ad3417ca27316ca0ab59ba
+      internalID: 532386350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: win_screen_4
+      name: mop_5
       rect:
         serializedVersion: 2
         x: 64
@@ -214,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd1963d8f17f947fab6017c8fdfabd77
-      internalID: 395068822
+      spriteID: f1dd079d2b3e94db4a095db611f70e15
+      internalID: 1880753124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: win_screen_5
+      name: mop_6
       rect:
         serializedVersion: 2
         x: 128
@@ -235,8 +256,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad6263c74ff34414e89809edead9776c
-      internalID: -648812018
+      spriteID: 061befeefb6a74fcea63a361b6918063
+      internalID: 456313138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fd64a40d2d24f218916fe1e6ef0378
+      internalID: 2118783304
       vertices: []
       indices: 
       edges: []
@@ -252,12 +294,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      win_screen_2: 822975037
-      win_screen_3: -310191933
-      win_screen_1: 972030786
-      win_screen_0: 37677870
-      win_screen_4: 395068822
-      win_screen_5: -648812018
+      mop_4: 532386350
+      mop_2: 523089638
+      mop_7: 2118783304
+      mop_1: 404931612
+      mop_3: -106378882
+      mop_0: -1899364030
+      mop_5: 1880753124
+      mop_6: 456313138
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

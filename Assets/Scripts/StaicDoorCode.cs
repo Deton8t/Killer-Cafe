@@ -10,7 +10,7 @@ public class StaicDoorCode : MonoBehaviour
     public KeyCode interact;
     public KeyCode lookAt;
     public TextHandler textBox;
-
+    public bool room1;
     public string scene;
 
 
@@ -28,6 +28,7 @@ public class StaicDoorCode : MonoBehaviour
         {
             if (Input.GetKeyDown(interact))
             {
+                itemTracker.fromRoom1 = room1;
                 SceneManager.LoadScene(scene);
             }
             else if (Input.GetKeyDown(lookAt))

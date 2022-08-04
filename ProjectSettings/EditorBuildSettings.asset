@@ -26,4 +26,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CultRoom.unity
     guid: 14e64e80f47b8cc4ca3d44da89a24a04
+  - enabled: 1
+    path: Assets/Scenes/MainRoom3.unity
+    guid: 871f810af163b4b0dae54c981ea92a94
+  - enabled: 1
+    path: Assets/Scenes/Room 3.unity
+    guid: d02eee9c563c34637a2627bd11066b9a
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 5465c5f2103074d83b72a6322932f752
+  - enabled: 1
+    path: Assets/Scenes/CutScenes/CutScene4.unity
+    guid: 05488dac0c3b21140af5137c627f747a
+  - enabled: 1
+    path: Assets/Scenes/CutScenes/CutScene5.unity
+    guid: e5d25ae58db2a4d70bb74f6f90d92ef5
+  - enabled: 1
+    path: Assets/Scenes/MainRoom2.unity
+    guid: 9cb9d84d758e26344bb3353c66f19912
   m_configObjects: {}

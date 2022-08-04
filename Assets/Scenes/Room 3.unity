@@ -664,12 +664,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 695, y: 391}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1210,10 +1210,6 @@ MonoBehaviour:
   moveLeft: 97
   mainCharacter: {fileID: 0}
   movementSpeed: 4
-  yborderTop: 0
-  xborderRight: 0
-  xborderLeft: 0
-  yborderBottom: 0
   flipper: {fileID: 0}
 --- !u!114 &1514102918
 MonoBehaviour:
@@ -1780,6 +1776,14 @@ PrefabInstance:
     - target: {fileID: 2857059163518859617, guid: 130e97fab467c41efbb828d41250db63, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857059163518859617, guid: 130e97fab467c41efbb828d41250db63, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.069641
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857059163518859617, guid: 130e97fab467c41efbb828d41250db63, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -9.389038
       objectReference: {fileID: 0}
     - target: {fileID: 3114675906067932320, guid: 130e97fab467c41efbb828d41250db63, type: 3}
       propertyPath: m_RootOrder
