@@ -44,7 +44,7 @@ public class Timer : MonoBehaviour
         }
         string timerBoth = timerMinute + ":" + timerSeconds;
         timerText.text = timerBoth;
-
+        saveTime();
 
     }
     public void saveTime()

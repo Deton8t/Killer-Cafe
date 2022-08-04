@@ -30,30 +30,49 @@ public class DoorCodeWithItem : MonoBehaviour
     {
         if (isColliding)
         {
-            if (Input.GetKeyDown(interact) && itemTracker.hasItem1 && interactCount > 0)
+            if (itemTracker.baristaDead)
             {
-                //make if statement for knife
-                SceneManager.LoadScene("CutScene3");
+                if (Input.GetKeyDown(interact) && itemTracker.hasItem2 && interactCount > 0)
+                {
+                    //make if statement for knife
+                    SceneManager.LoadScene("CultRoom");
+                }
+                else if (Input.GetKeyDown(interact) && itemTracker.hasItem2 == false)
+                {
+                    textBox.displayText("I need a key");
+                }
+                if (Input.GetKeyDown(interact) && itemTracker.hasItem2 && interactCount == 0)
+                {
+                    textBox.displayText("Are you sure? Interact again to confirm.");
+                    interactCount += 1;
+                }
             }
-            else if (Input.GetKeyDown(interact) && itemTracker.hasItem1 == false)
+            else
             {
-                textBox.displayText("The barista had a knife. I dont wanna go in without my own.");
-            }
-            if (Input.GetKeyDown(interact) && itemTracker.hasItem1 && interactCount == 0)
-            {
-                textBox.displayText("Are you sure? Interact again to confirm.");
-                interactCount += 1;
-            }
-            if (Input.GetKeyDown(lookAt))
-            {
-                textBox.displayText(lookAtText);
-                Debug.Log("Viewed");
-            }
+                if (Input.GetKeyDown(interact) && itemTracker.hasItem1 && interactCount > 0)
+                {
+                    //make if statement for knife
+                    itemTracker.baristaDead = true;
+                    SceneManager.LoadScene("CutScene3");
+                }
+                else if (Input.GetKeyDown(interact) && itemTracker.hasItem1 == false)
+                {
+                    textBox.displayText("The barista had a knife. I dont wanna go in without my own.");
+                }
+                if (Input.GetKeyDown(interact) && itemTracker.hasItem1 && interactCount == 0)
+                {
+                    textBox.displayText("Are you sure? Interact again to confirm.");
+                    interactCount += 1;
+                }
+                if (Input.GetKeyDown(lookAt))
+                {
+                    textBox.displayText(lookAtText);
+                    Debug.Log("Viewed");
+                }
 
+            }
         }
-
     }
-
 
 
     void OnTriggerEnter2D()

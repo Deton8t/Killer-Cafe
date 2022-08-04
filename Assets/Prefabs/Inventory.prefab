@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e8c7734ac024e0da9a9effeb0c62c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invSlot: 0
+  invSlot: 3
   gotItem: 0
   isLoaded: 0
 --- !u!1 &3799514171447280061
