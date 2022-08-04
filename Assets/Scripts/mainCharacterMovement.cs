@@ -11,10 +11,7 @@ public class mainCharacterMovement : MonoBehaviour
     public KeyCode moveLeft;
     public Rigidbody2D mainCharacter;
     public float movementSpeed;
-    public float yborderTop;
-    public float xborderRight;
-    public float xborderLeft;
-    public float yborderBottom;
+
     public SpriteRenderer flipper;
 
 
@@ -29,11 +26,11 @@ public class mainCharacterMovement : MonoBehaviour
         Vector2 velocity = mainCharacter.velocity;
 
         //checks if the main character is within the boundaries and the button is clicked then moves it accordingly
-        if (Input.GetKey(moveUp) && mainCharacter.transform.position.y < yborderTop)
+        if (Input.GetKey(moveUp))
         {
             velocity.y = movementSpeed;
         }
-        else if (Input.GetKey(moveDown) && mainCharacter.transform.position.y > yborderBottom)
+        else if (Input.GetKey(moveDown))
         {
             velocity.y = -movementSpeed;
         }
@@ -42,12 +39,12 @@ public class mainCharacterMovement : MonoBehaviour
             velocity.y = 0;
         }
 
-        if (Input.GetKey(moveRight) && mainCharacter.transform.position.x < xborderRight)
+        if (Input.GetKey(moveRight))
         {
             velocity.x = movementSpeed;
             flipper.flipX = true;
         }
-        else if (Input.GetKey(moveLeft) && mainCharacter.transform.position.x > xborderLeft)
+        else if (Input.GetKey(moveLeft))
         {
             velocity.x = -movementSpeed;
             flipper.flipX = false;

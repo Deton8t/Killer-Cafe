@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class bodyKey : MonoBehaviour
+public class MopScript : MonoBehaviour
 {
-
-    public string interactText;
     public string lookAtText;
     public bool isColliding;
-    public TextHandler textBox;
     public KeyCode interact;
     public KeyCode lookAt;
-    public int interactCount;
-    public itemSpawner spawner;
+    public TextHandler textBox;
+
 
 
 
@@ -21,7 +19,6 @@ public class bodyKey : MonoBehaviour
     {
         interact = KeyCode.E;
         lookAt = KeyCode.F;
-        itemTracker.baristaDead = true;
 
     }
 
@@ -30,36 +27,35 @@ public class bodyKey : MonoBehaviour
     {
         if (isColliding)
         {
-            if (Input.GetKeyDown(interact))
+            if (itemTracker.hasItem2)
             {
-                textBox.displayText(interactText);
-                itemTracker.hasItem2 = true;
-                spawner.loadItem();
+                if (Input.GetKeyDown(interact))
+                {
+                    textBox.displayText("You picked up the mop");
+                    itemTracker.hasItem3 = true;
+                }
             }
-
             if (Input.GetKeyDown(lookAt))
             {
                 textBox.displayText(lookAtText);
+                Debug.Log("Viewed");
             }
-            else
-            {
-
-            }
-        }
-        else
-        {
 
         }
+
+
     }
+
+
 
     void OnTriggerEnter2D()
     {
         isColliding = true;
     }
+
     void OnTriggerExit2D()
     {
         isColliding = false;
         textBox.displayText("");
     }
-
 }
