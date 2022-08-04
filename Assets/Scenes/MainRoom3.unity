@@ -1333,6 +1333,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1799075649}
     m_Modifications:
+    - target: {fileID: 2540609705359996740, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 1320947464}
     - target: {fileID: 4599642709713598552, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: m_Name
       value: Text (Legacy)
@@ -1481,6 +1485,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2540609705359996741, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
   m_PrefabInstance: {fileID: 1320947461}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1320947464 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4604730939428490460, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+  m_PrefabInstance: {fileID: 1320947461}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1403884514
 GameObject:
   m_ObjectHideFlags: 0

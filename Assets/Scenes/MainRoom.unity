@@ -340,7 +340,7 @@ MonoBehaviour:
   lookAt: 102
   textBox: {fileID: 4599642709708183752}
   safe: {fileID: 922792109}
-  safeCode: 2165
+  safeCode: 5612
 --- !u!61 &73230014
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1673,6 +1673,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3114675906067932320, guid: 130e97fab467c41efbb828d41250db63, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114675906067932320, guid: 130e97fab467c41efbb828d41250db63, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869215042547027319, guid: 130e97fab467c41efbb828d41250db63, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869215042547027319, guid: 130e97fab467c41efbb828d41250db63, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869215042547027319, guid: 130e97fab467c41efbb828d41250db63, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 8207238300788896539, guid: 130e97fab467c41efbb828d41250db63, type: 3}
       propertyPath: m_Name
       value: Inventory
@@ -2241,29 +2261,22 @@ MonoBehaviour:
   inventory: 105
   invOpen: 0
   invController: {fileID: 2103940085}
---- !u!1 &2103940083 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8207238300788896539, guid: 130e97fab467c41efbb828d41250db63, type: 3}
-  m_PrefabInstance: {fileID: 1484003424}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2103940084 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2857059163518859617, guid: 130e97fab467c41efbb828d41250db63, type: 3}
   m_PrefabInstance: {fileID: 1484003424}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2103940085
+--- !u!114 &2103940085 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4070822543337922160, guid: 130e97fab467c41efbb828d41250db63, type: 3}
+  m_PrefabInstance: {fileID: 1484003424}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103940083}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb114efc8492847d4882b95ec6433ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 2103940083}
 --- !u!1001 &4599642709708183751
 PrefabInstance:
   m_ObjectHideFlags: 0
