@@ -32,27 +32,19 @@ public class DoorCodeWithItem : MonoBehaviour
         {
             if (itemTracker.baristaDead)
             {
-                if (Input.GetKeyDown(interact) && itemTracker.hasItem2 && interactCount > 0)
+                if (Input.GetKeyDown(interact))
                 {
                     //make if statement for knife
                     SceneManager.LoadScene("CultRoom");
                 }
-                else if (Input.GetKeyDown(interact) && itemTracker.hasItem2 == false)
-                {
-                    textBox.displayText("I need a key");
-                }
-                if (Input.GetKeyDown(interact) && itemTracker.hasItem2 && interactCount == 0)
-                {
-                    textBox.displayText("Are you sure? Interact again to confirm.");
-                    interactCount += 1;
-                }
+
+
             }
             else
             {
                 if (Input.GetKeyDown(interact) && itemTracker.hasItem1 && interactCount > 0)
                 {
                     //make if statement for knife
-                    itemTracker.baristaDead = true;
                     SceneManager.LoadScene("CutScene3");
                 }
                 else if (Input.GetKeyDown(interact) && itemTracker.hasItem1 == false)

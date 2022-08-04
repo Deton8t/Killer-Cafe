@@ -17,6 +17,7 @@ public class safeScript : MonoBehaviour
 
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +45,7 @@ public class safeScript : MonoBehaviour
 
         if (safe.activeSelf && safe.GetComponent<TMP_InputField>().text == safeCode)
         {
-            SceneManager.LoadScene("CutScene2");
+            SceneManager.LoadScene("CutScene5");
             safe.SetActive(false);
         }
 
