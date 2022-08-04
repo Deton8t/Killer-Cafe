@@ -10,6 +10,7 @@ public class itemTracker : MonoBehaviour
     public static bool hasItem4 = false;
     public static int fromRoom = 1;
     public static float timeLeft = 600F;
+    public static bool baristaDead = false;
     // Start is called before the first frame update
     void Start()
     {

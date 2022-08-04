@@ -156,7 +156,7 @@ MonoBehaviour:
   interactText: Someone should clean this
   lookAtText: It's a spill
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!61 &3067161
@@ -200,22 +200,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &65970336 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4599642709713598567, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
-  m_PrefabInstance: {fileID: 4599642709708183751}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &65970337 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4599642709713598566, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
-  m_PrefabInstance: {fileID: 4599642709708183751}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ffaa5a44bd4b40cd90d986eee00be38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &72243269
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +301,7 @@ MonoBehaviour:
   interactText: I don't want to sit the seat's sticky
   lookAtText: I was just sitting there
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!1 &73230012
@@ -354,7 +338,7 @@ MonoBehaviour:
   isColliding: 0
   interact: 101
   lookAt: 102
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   safe: {fileID: 922792109}
   safeCode: 2165
 --- !u!61 &73230014
@@ -500,7 +484,7 @@ MonoBehaviour:
     really good I swear'
   lookAtText: He's a bit of a nerd
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!1 &252088839
@@ -536,7 +520,7 @@ MonoBehaviour:
   interactText: The door is locked
   lookAtText: This is the door I came in through
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!61 &252088841
@@ -580,6 +564,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &280089472 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2540609705359996741, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+  m_PrefabInstance: {fileID: 4599642709708183751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &429301270
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +671,7 @@ MonoBehaviour:
     here'
   lookAtText: She seems a little worried
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!1 &508376475
@@ -875,7 +864,7 @@ MonoBehaviour:
   interactText: The Door is locked
   lookAtText: I wonder where this leads
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!61 &916986503
@@ -962,7 +951,7 @@ MonoBehaviour:
   interactText: '>Don''t touch that!'
   lookAtText: It's a mop
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!61 &1060549327
@@ -1134,7 +1123,7 @@ MonoBehaviour:
   interactText: '>I''m only 5 and I don''t know where my parents are'
   lookAtText: He looks very young
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!1 &1300279366
@@ -1171,7 +1160,7 @@ MonoBehaviour:
   interactText: '>Times Ticking'
   lookAtText: She seems to be in on it
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!61 &1300279368
@@ -1342,7 +1331,7 @@ MonoBehaviour:
   interactText: It's still a trash can
   lookAtText: It's a trash can
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 101
   lookAt: 102
 --- !u!1001 &1337483601
@@ -1370,7 +1359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3008378607975577611, guid: 9e4f208615e554b7893bb9acbb93842d, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.69
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3008378607975577611, guid: 9e4f208615e554b7893bb9acbb93842d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1378,11 +1367,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3008378607975577611, guid: 9e4f208615e554b7893bb9acbb93842d, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.53
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3008378607975577611, guid: 9e4f208615e554b7893bb9acbb93842d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.85
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 3008378607975577611, guid: 9e4f208615e554b7893bb9acbb93842d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1439,6 +1428,10 @@ PrefabInstance:
     - target: {fileID: 3008378607975577611, guid: 9e4f208615e554b7893bb9acbb93842d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008378607975577613, guid: 9e4f208615e554b7893bb9acbb93842d, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e4f208615e554b7893bb9acbb93842d, type: 3}
@@ -1605,7 +1598,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300000, guid: 1f9e8f0abee95a747a637070929dc04a, type: 3}
+  m_Sprite: {fileID: -1385975524, guid: cfd6f0cb9eeb15844ae0fa43e93bebe4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1631,17 +1624,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1786989379 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4599642709713598565, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
-  m_PrefabInstance: {fileID: 4599642709708183751}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1838139571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,7 +1716,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 65970336}
+  - {fileID: 280089472}
   - {fileID: 922792110}
   - {fileID: 2103940084}
   - {fileID: 711058035}
@@ -1879,7 +1861,7 @@ MonoBehaviour:
   interactText: '> I wish I could go home to my 2 kids.'
   lookAtText: He has nice hair
   isColliding: 0
-  textBox: {fileID: 65970337}
+  textBox: {fileID: 4599642709708183752}
   interact: 0
   lookAt: 0
 --- !u!61 &1860706037
@@ -2191,7 +2173,7 @@ PrefabInstance:
     - target: {fileID: 4599642709713598566, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: textBox
       value: 
-      objectReference: {fileID: 1786989379}
+      objectReference: {fileID: 0}
     - target: {fileID: 4599642709713598567, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2276,8 +2258,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4604730939428490460, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+--- !u!114 &4599642709708183752 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2540609705359996740, guid: 4dd413985c3624411ad441b51883ab0d, type: 3}
+  m_PrefabInstance: {fileID: 4599642709708183751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ffaa5a44bd4b40cd90d986eee00be38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6655069289872629909
 PrefabInstance:
   m_ObjectHideFlags: 0
