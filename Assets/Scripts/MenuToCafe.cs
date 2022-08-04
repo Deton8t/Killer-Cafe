@@ -10,4 +10,13 @@ public class MenuToCafe : MonoBehaviour
     {
         SceneManager.LoadScene("CutScene1");
     }
+    public void goControls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
+    public void goMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

@@ -27,6 +27,10 @@ public class Timer : MonoBehaviour
         float minutes = timeLeft / 60F;
         float seconds = timeLeft % 60F;
         minutes = minutes - seconds / 60F;
+        if (minutes < 1)
+        {
+            minutes = 0;
+        }
         string timerMinute = minutes.ToString();
         string timerSeconds = seconds.ToString("F5");
         if (timerSeconds.Length == 8)

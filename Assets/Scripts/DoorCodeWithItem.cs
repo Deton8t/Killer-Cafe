@@ -53,7 +53,7 @@ public class DoorCodeWithItem : MonoBehaviour
                 }
                 if (Input.GetKeyDown(interact) && itemTracker.hasItem1 && interactCount == 0)
                 {
-                    textBox.displayText("Are you sure? Interact again to confirm.");
+                    textBox.displayText("Are you sure you want to go through?");
                     interactCount += 1;
                 }
                 if (Input.GetKeyDown(lookAt))

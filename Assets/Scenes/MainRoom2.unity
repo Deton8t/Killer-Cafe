@@ -1973,11 +1973,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookAtText: It seems like we came through a closet
   isColliding: 0
-  interact: 0
-  lookAt: 0
+  interact: 101
+  lookAt: 102
   textBox: {fileID: 2030482406}
   room1: 1
-  scene: KitchenRoom
+  scene: MainToKitchenTR
 --- !u!1001 &1727543216
 PrefabInstance:
   m_ObjectHideFlags: 0
