@@ -11,7 +11,12 @@ public class mainCharacterController : MonoBehaviour
 
     void Start()
     {
+        if (itemTracker.fromRoom1)
+        {
+            this.transform.position = new Vector3(2f, this.transform.position.y, 0);
+        }
         inventory = KeyCode.I;
+        itemTracker.fromRoom1 = false;
     }
 
     void Update()
